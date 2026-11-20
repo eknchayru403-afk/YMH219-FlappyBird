@@ -33,11 +33,15 @@
             pbKus = new PictureBox();
             pbBoruUst = new PictureBox();
             pbBoruAlt = new PictureBox();
+            pbBoruUst2 = new PictureBox();
+            pbBoruAlt2 = new PictureBox();
             lblSkor = new Label();
             lblMesaj = new Label();
             tmrOyun = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pbZemin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbKus).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbBoruUst2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbBoruAlt2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbBoruUst).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbBoruAlt).BeginInit();
             SuspendLayout();
@@ -114,6 +118,26 @@
             Controls.Add(lblSkor);
             Controls.Add(pbBoruAlt);
             Controls.Add(pbBoruUst);
+            // pbBoruUst2
+            pbBoruUst2.BackColor = Color.SeaGreen;
+            pbBoruUst2.Location = new Point(780, 0);
+            pbBoruUst2.Name = "pbBoruUst2";
+            pbBoruUst2.Size = new Size(75, 180);
+            pbBoruUst2.TabIndex = 10;
+            pbBoruUst2.TabStop = false;
+
+            // pbBoruAlt2
+            pbBoruAlt2.BackColor = Color.SeaGreen;
+            pbBoruAlt2.Location = new Point(780, 330);
+            pbBoruAlt2.Name = "pbBoruAlt2";
+            pbBoruAlt2.Size = new Size(75, 240);
+            pbBoruAlt2.TabIndex = 11;
+            pbBoruAlt2.TabStop = false;
+
+            Controls.Add(pbBoruUst2);
+            Controls.Add(pbBoruAlt2);
+            ((System.ComponentModel.ISupportInitialize)pbBoruUst2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbBoruAlt2).EndInit();
             Controls.Add(pbKus);
             Controls.Add(pbZemin);
             DoubleBuffered = true;
@@ -140,5 +164,7 @@
         private Label lblSkor;
         private Label lblMesaj;
         private System.Windows.Forms.Timer tmrOyun;
+        private PictureBox pbBoruUst2;
+        private PictureBox pbBoruAlt2;
     }
 }
