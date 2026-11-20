@@ -16,6 +16,12 @@ Bu proje, C# Windows Forms (.NET) kullanılarak geliştirilmiş, yerçekimi fizi
 ## Kontroller
 * **SPACE (Boşluk):** Oyunu başlatır, kuşu zıplatır ve oyun bittiğinde yeniden başlatır.
 
+* ## Bilinen Sınırlamalar ve Geliştirme Notları
+
+* Oyun fizik motoru sabit zaman aralıklı Windows Forms `Timer` bileşenine bağlı olduğu için çok düşük kare hızına sahip sistemlerde akıcılık farklılık gösterebilir.
+* Yüksek skor kaydı yerel dosya sisteminde tutulduğu için farklı cihazlar arasında bulut senkronizasyonu bulunmamaktadır.
+* İlerleyen sürümlerde farklı zorluk seviyeleri (boru hızı ve boşluk aralığı değişimi) ile ses efektleri eklenebilir.
+
 ## Kurulum ve Çalıştırma
 1. Depoyu bilgisayarınıza klonlayın:
    ```bash
