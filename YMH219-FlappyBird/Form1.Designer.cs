@@ -102,6 +102,7 @@
             // tmrOyun
             // 
             tmrOyun.Interval = 20;
+            tmrOyun.Tick += tmrOyun_Tick;
             // 
             // Form1
             // 
@@ -120,6 +121,8 @@
             MaximizeBox = false;
             Name = "Form1";
             Text = "Flappy Bird - YMH 219";
+            Load += Form1_Load;
+            KeyDown += Form1_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pbZemin).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbKus).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbBoruUst).EndInit();
